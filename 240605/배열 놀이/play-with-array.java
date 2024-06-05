@@ -40,6 +40,8 @@ public class Main {
                     System.out.print(ints[i]+" ");
                 }
                 break;
+
+                
             }
         count++;
         }
