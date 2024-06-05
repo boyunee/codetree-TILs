@@ -26,11 +26,11 @@ public class Main {
                     }
 
                 }
-               
             }
-             if(same){
-                    break;
-                }
+            if(same){
+                break;
+            }
+            
         
         }
 
