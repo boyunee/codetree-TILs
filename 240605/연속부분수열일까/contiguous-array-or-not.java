@@ -17,7 +17,11 @@ public class Main {
         boolean same = false;
         for(int i=0; i<A.length; i++){
             if(A[i]== B[0]){
+                if(i+B.length > A.length){
+                    break;
+                }
                 for(int j=0; j<B.length; j++){
+                    
                     if(A[i+j]==B[j]){
                         same = true;
                     }else{
@@ -27,10 +31,7 @@ public class Main {
 
                 }
             }
-            if(same){
-                break;
-            }
-            
+        
         
         }
 
