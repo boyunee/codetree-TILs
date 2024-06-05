@@ -36,7 +36,7 @@ public class Main {
                 case 3:
                 int s = sc.nextInt();
                 int e = sc.nextInt();
-                for(int i = s-1; i<=e-1; i++){
+                for(int i = s-1; i<e; i++){
                     System.out.print(ints[i]+" ");
                 }
                 break;
