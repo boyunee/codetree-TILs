@@ -26,7 +26,11 @@ public class Main {
                     }
 
                 }
+               
             }
+             if(same){
+                    break;
+                }
         
         }
 
