@@ -14,9 +14,12 @@ public class Main {
             for(int j=0; j<size; j++){
                 if(ints[i] == ints[j]){
                     count++;
-                    if(count > 1){ints[i] = 0;}
+                    if(count > 1){
+                        ints[j] = 0;
+                    }
                 }
             }
+            if(count > 1){ ints[i] = 0;}
         
         }
         Arrays.sort(ints);
