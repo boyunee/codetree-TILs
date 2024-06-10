@@ -31,6 +31,7 @@ public class Main {
 
         }
         System.out.println("");
-        System.out.println(totalSum / 8);
+        double totalMean = totalSum / 8;
+        System.out.println(Math.round(totalMean*10)/10.0);
     }
 }
