@@ -6,17 +6,20 @@ public class Main {
         int n = sc.nextInt();
         int[][] ints = new int[n][n];
         int num =1;
+        boolean order = true;
         for(int i =n-1; i>=0 ; i--){
-            if(i % 2 == 0){
+            if(!order){
                 for(int j =0 ;j<n; j++){
                     ints[j][i] = num;
                     num++;
                 }
+                order = true;
             }else{
                 for(int j = n-1; j>=0; j--){
                     ints[j][i] = num;
                     num++;
                 }
+                order = false;
             }
             
         }
