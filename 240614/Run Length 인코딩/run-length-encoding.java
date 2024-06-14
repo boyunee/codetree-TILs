@@ -15,6 +15,7 @@ public class Main {
                 count++;
                 result += str.charAt(i);
                 result += String.valueOf(count);
+                break;
             }
             
             if(str.charAt(i) != str.charAt(i-1)){
