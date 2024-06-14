@@ -23,6 +23,7 @@ public class Main {
                     result += String.valueOf(count);
 
                 }
+                break;
 
             }
             if(str.charAt(i) != str.charAt(i-1)){
