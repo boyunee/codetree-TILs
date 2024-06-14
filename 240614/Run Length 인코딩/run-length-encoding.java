@@ -9,6 +9,10 @@ public class Main {
         int count =0;
         for(int i=0; i<str.length();i++){
             if(i == 0){
+                if(str.length() == 1){
+                    System.out.println(2);
+                    System.out.println(str.charAt(i) + "1");
+                }
                 count++;
                 continue;
             }else if(i == str.length() -1){
