@@ -10,8 +10,7 @@ public class Main {
         for(int i=0; i<str.length();i++){
             if(i == 0){
                 if(str.length() == 1){
-                    System.out.println(2);
-                    System.out.println(str.charAt(i) + "1");
+                    result = str.charAt(i) + "1";
                 }
                 count++;
                 continue;
