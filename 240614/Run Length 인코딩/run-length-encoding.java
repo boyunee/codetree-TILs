@@ -12,13 +12,21 @@ public class Main {
                 count++;
                 continue;
             }else if(i == str.length() -1){
-                count++;
-                result += str.charAt(i);
-                result += String.valueOf(count);
-                break;
+                if(str.charAt(i) != str.charAt(i-1)){
+                    result += str.charAt(i-1);
+                    result += String.valueOf(count);
+                    result += str.charAt(i);
+                    result += String.valueOf(1);
+                }else{
+                    count++;
+                    result += str.charAt(i-1);
+                    result += String.valueOf(count);
+
+                }
+
             }
-            
             if(str.charAt(i) != str.charAt(i-1)){
+            
                 result += str.charAt(i-1);
                 result += String.valueOf(count);
                 count =1;
@@ -26,6 +34,7 @@ public class Main {
             }else{
                 count++;
             }
+
 
         }
         System.out.println(result.length());
