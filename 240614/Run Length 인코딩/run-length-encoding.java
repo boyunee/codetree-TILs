@@ -17,13 +17,15 @@ public class Main {
                     result += String.valueOf(count);
                     result += str.charAt(i);
                     result += String.valueOf(1);
+                    break;
                 }else{
                     count++;
                     result += str.charAt(i-1);
                     result += String.valueOf(count);
+                    break;
 
                 }
-                break;
+                
 
             }
             if(str.charAt(i) != str.charAt(i-1)){
