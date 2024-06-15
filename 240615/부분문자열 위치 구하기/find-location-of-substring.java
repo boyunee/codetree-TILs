@@ -6,20 +6,7 @@ public class Main {
         String str = sc.nextLine();
         String part = sc.nextLine();
 
-        int index = 0;
-        int count = 0;
-        if(str.contains(part)){
-            while((index = str.indexOf(part, index)) != -1){
-            count++;
-            index += 1;
-            System.out.println(count);
-
-        }
-
-        }else{
-            System.out.println(str.indexOf(part));
-
-        }
+        System.out.println(str.indexOf(part));
         
     }
 }
