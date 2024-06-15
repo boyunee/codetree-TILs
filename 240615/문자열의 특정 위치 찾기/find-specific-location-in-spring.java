@@ -5,6 +5,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         String find = sc.next();
-        System.out.println(str.indexOf(find));
+        if(str.indexOf(find) == -1){
+            System.out.println("No");
+        }else{
+System.out.println(str.indexOf(find));
+        }
+        
     }
 }
