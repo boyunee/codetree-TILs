@@ -6,8 +6,9 @@ public class Main {
         String str = sc.next();
         int n =sc.nextInt();
         int len = str.length();
+        int q =0;
         for(int i =0; i<n;i++){
-            int q = sc.nextInt();
+            q = sc.nextInt();
             switch(q){
                 case 1:
                 str = str.substring(1,len)+str.substring(0,1);
