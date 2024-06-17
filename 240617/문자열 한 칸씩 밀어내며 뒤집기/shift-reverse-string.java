@@ -6,30 +6,28 @@ public class Main {
         String str = sc.next();
         int n =sc.nextInt();
         int len = str.length();
+        StringBuilder sb = new StringBuilder(str);
         int q =0;
-        char[] chars;
         for(int i =0; i<n;i++){
             q = sc.nextInt();
             switch(q){
                 case 1:
-                str = str.substring(1,len)+str.substring(0,1);
+                sb.deleteCharAt(0);
+                sb.append(String.valueOf(str.charAt(0)));
                 break;
                 
                 case 2:
-                str = str.substring(len -1)+str.substring(0,len-1);
+                sb.deleteCharAt(len-1);
+                sb.insert(0,String.valueOf(str.charAt(len-1)));
                 break;
                 
                 case 3:
-                chars = str.toCharArray();
-                str ="";
-
-                for(int j =len -1; j>=0; j--){
-                    str += String.valueOf(chars[j]);
-                }
+                sb.reverse();
                 break;
 
                 
             }
+            str = sb.toString();
             System.out.println(str);
         }
     }
