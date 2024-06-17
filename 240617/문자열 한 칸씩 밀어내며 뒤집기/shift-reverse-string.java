@@ -7,6 +7,7 @@ public class Main {
         int n =sc.nextInt();
         int len = str.length();
         int q =0;
+        char[] chars;
         for(int i =0; i<n;i++){
             q = sc.nextInt();
             switch(q){
@@ -19,7 +20,7 @@ public class Main {
                 break;
                 
                 case 3:
-                char[] chars = str.toCharArray();
+                chars = str.toCharArray();
                 str ="";
 
                 for(int j =len -1; j>=0; j--){
