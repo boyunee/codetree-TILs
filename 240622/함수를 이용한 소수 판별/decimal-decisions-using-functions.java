@@ -7,6 +7,11 @@ public class Main {
         int b = sc.nextInt();
         int sum =0;
         for(int i=a; i<=b; i++){
+
+
+            if(i ==0 ){
+                break;
+            }
             if(isPrime(i)){
                 sum += i;
             }
