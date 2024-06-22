@@ -9,7 +9,7 @@ public class Main {
         for(int i=a; i<=b; i++){
 
 
-            if(i ==0 ){
+            if(i ==1 ){
                 break;
             }
             if(isPrime(i)){
