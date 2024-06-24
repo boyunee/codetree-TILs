@@ -28,16 +28,16 @@ public class Main {
             }
     }
     public static void add(int a, int c){
-        System.out.println(a+" + "+c+" = "+ a+c);
+        System.out.println(a+" + "+c+" = "+ (a+c));
     }
     public static void minus(int a, int c){
         
         System.out.println(a+" - "+c+" = "+(a-c) );
     }
     public static void multiple(int a, int c){
-        System.out.println(a+" * "+c+" = "+ a*c);
+        System.out.println(a+" * "+c+" = "+ (a*c));
     }
     public static void division(int a, int c){
-        System.out.println(a+" / "+c+" = "+ (int) a/c);
+        System.out.println(a+" / "+c+" = "+ (int) (a/c));
     }
 }
