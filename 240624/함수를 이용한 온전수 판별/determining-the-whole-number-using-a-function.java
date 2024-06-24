@@ -7,7 +7,7 @@ public class Main {
         int b = sc.nextInt();
 
         int count =0;
-        for(int i=a; i<b; i++){
+        for(int i=a; i<=b; i++){
             if(check(i)){
                 count++;
             }
