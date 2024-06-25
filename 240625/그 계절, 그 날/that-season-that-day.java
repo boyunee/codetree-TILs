@@ -13,7 +13,7 @@ public class Main {
     public static String checkDay(int Y, int M, int D){
         if(M == 2){
             if(isLeapYear(Y)){
-                if(D>0 && D<=29){
+                if(D<=29){
                     return "Winter";
 
                 }else{
@@ -21,47 +21,38 @@ public class Main {
                 }
 
             }else{
-                if(D>0 && D<=28){
+                if(D<=28){
                     return "Winter";
 
                 }else{
                     return "-1";
                 }
             }
-        }else if(M >=3 && M <= 5 && M != 2){
+        }else if(M >=3 && M <= 5){
             if(M ==4){
-                if(D>0 && D<=30){
-                    return "Spring";
+                if(D == 31){
+                    return "-1";
 
                 }else{
-                    return "-1";
+                    return "Spring";
                 }
             }else{
-                if(D>0 && D<=31){
-                    return "Spring";
-
-                }else{
-                    return "-1";
-                }
+                return "Spring";
 
             }
 
         }else if(M>= 6 && M<= 8){
             if(M == 6){
-                if(D>0 && D<=30){
-                    return "Winter";
+                if(D == 31){
+                    return "-1";
 
                 }else{
-                    return "-1";
+                    return "Summer";
                 }
 
             }else{
-                if(D>0 && D<=31){
-                    return "Winter";
+                    return "Summer";
 
-                }else{
-                    return "-1";
-                }
 
             }
         }
