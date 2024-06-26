@@ -8,8 +8,9 @@ public class Main {
 
     }
     public static String check(StringBuilder sb){
-        String reversed = sb.reverse().toString();
         String str =sb.toString();
+        String reversed = sb.reverse().toString();
+        
         if(str.equals(reversed)){
             return "Yes";
         }else{
