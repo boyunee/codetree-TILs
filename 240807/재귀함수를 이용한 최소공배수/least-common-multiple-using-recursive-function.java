@@ -3,7 +3,7 @@ public class Main {
     public static int[] ints;
     public static int result=1;
     public static int find(int n){
-        if(n==0){
+        if(n<0){
             for(int i=0; i<ints.length; i++){
                 result *= ints[i];
             }
@@ -12,8 +12,8 @@ public class Main {
 
         if(ints[n]==1){
             return find(n-1);
-        }
-        for(int i=2;  i<ints[n]; i++){
+        }else{
+            for(int i=2;  i<=ints[n]; i++){
             int count =0;
             for(int j=0; j<ints.length; j++){
                 if(ints[j] % i == 0){
@@ -27,7 +27,10 @@ public class Main {
 
             }
         }
-        return find(n-1);
+            return find(n-1);
+        }
+        
+        
     }
     public static void divide(int m){
         for(int i=0; i<ints.length; i++){
@@ -41,12 +44,12 @@ public class Main {
         // 여기에 코드를 작성해주세요.
 
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        ints = new int[n];
-        for(int i =0; i<n; i++){
+        int l = sc.nextInt();
+        ints = new int[l];
+        for(int i =0; i<l; i++){
             ints[i] = sc.nextInt();
         }
-        System.out.println(find(n-1));
+        System.out.println(find(l-1));
 
 
 
