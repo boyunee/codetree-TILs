@@ -9,16 +9,16 @@ public class Main {
             regionLists[i] = new RegionList(sc.next(), sc.next(), sc.next());
         }
 
-        RegionList[] sortedRL = Arrays.stream(regionLists).sorted().toArray(RegionList[]::new);
-        System.out.println("name "+sortedRL[n-1].name);
-        System.out.println("addr "+sortedRL[n-1].addr);
-        System.out.println("city "+sortedRL[n-1].city);
+        Arrays.sort(regionLists, Comparator.comparing(region -> region.name));
+        System.out.println("name "+regionLists[n-1].name);
+        System.out.println("addr "+regionLists[n-1].addr);
+        System.out.println("city "+regionLists[n-1].city);
         
         
 
     }
 }
-class RegionList implements Comparable<RegionList>{
+class RegionList{
     String name;
     String addr;
     String city;
@@ -29,9 +29,6 @@ class RegionList implements Comparable<RegionList>{
         this.city = city;
     }
 
-    @Override
-    public int compareTo(RegionList other){
-        return this.name.compareTo(other.name);
-    }
+    
 
 }
