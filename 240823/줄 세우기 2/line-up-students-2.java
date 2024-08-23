@@ -10,7 +10,7 @@ public class Main {
         }
         
         Arrays.sort(students, Comparator.comparing((Student student) -> student.height)
-        .thenComparing(student -> student.weight));
+        .thenComparing(Comparator.comparing((Student student) -> student.weight).reversed()));
 
         for(int i=0; i<n; i++){
             System.out.print(students[i].height+" ");
