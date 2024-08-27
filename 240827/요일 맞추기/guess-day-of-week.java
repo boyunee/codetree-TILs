@@ -22,8 +22,8 @@ public class Main {
         if((m2-m1) < 0){
             day = d2 - d1;
             while(m1 != m2){
-                day += monthDays[m1];
-                m1--;
+                day += monthDays[m2];
+                m2++;
             }
             return day;
         }else if((m2-m1) == 0){
