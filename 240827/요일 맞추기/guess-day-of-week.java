@@ -27,7 +27,8 @@ public class Main {
             }
             return day;
         }else if((m2-m1) == 0){
-            return (d2 - d1);
+            day = d2 -d1;
+            return day;
 
 
         }else{
