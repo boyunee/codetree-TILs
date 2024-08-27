@@ -17,7 +17,7 @@ public class Main {
     public static int calculateTime(){
         if(a<day){
             return -1;
-        }else{
+        }else if(a==day){
             if(b<hour){
                 return -1;
             }else{
