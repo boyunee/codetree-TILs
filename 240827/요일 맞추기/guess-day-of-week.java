@@ -16,7 +16,7 @@ public class Main {
             day += 7;
         }
         
-        System.out.println(days[day]);
+        System.out.println(days[day % 7]);
     }
     public static int check(){
         if((m2-m1) < 0){
@@ -29,8 +29,6 @@ public class Main {
         }else if((m2-m1) == 0){
             day = d2 -d1;
             return day;
-
-
         }else{
             day = d2 - d1;
             while(m2 != m1){
