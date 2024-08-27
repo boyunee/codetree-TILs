@@ -15,6 +15,17 @@ public class Main {
 
     }
     public static int calculateTime(){
+        if(a<day){
+            return -1;
+        }else{
+            if(b<hour){
+                return -1;
+            }else{
+                if(c<minute){
+                    return -1;
+                }
+            }
+        }
         while(true){
             if(day==a && hour==b && minute==c){
                 return time;
