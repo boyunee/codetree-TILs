@@ -17,7 +17,7 @@ public class Main {
         int check = check();
         
         int index = Arrays.asList(week).indexOf(A);
-        System.out.println(index);
+        // System.out.println(index);
         if(check < index){
             System.out.println((check - index) / 7);
         }else{
