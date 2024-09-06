@@ -15,9 +15,15 @@ public class Main {
         A = sc.next();
         
         int check = check();
-        // System.out.println(check);
-        int temp = check - Arrays.asList(week).indexOf(A);
-        System.out.println(temp / 7 + 1);
+        
+        int index = Arrays.asList(week).indexOf(A);
+        System.out.println(index);
+        if(check < index){
+            System.out.println((check - index) / 7);
+        }else{
+            System.out.println((check - index) / 7 + 1);
+        }
+        
 
 
     }
