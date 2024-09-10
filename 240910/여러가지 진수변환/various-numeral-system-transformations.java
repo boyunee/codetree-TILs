@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    public static int[] ints = new int[1];
+    public static int[] ints = new int[20];
     public static String str="";
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -15,10 +15,8 @@ public class Main {
         while(true){
         if(n<b){
             ints[cnt++] = n;
-            for(int i=ints.length -1; i>=0 ; i--){
-                if(ints[i] != 0){
-                    str += String.valueOf(ints[i]);
-                }
+            for(int i=cnt -1 ; i>=0 ; i--){
+                str += String.valueOf(ints[i]);
                 
             }
             return str;
