@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    public static int[] ints = new int[20];
+    public static int[] ints = new int[1];
     public static String str="";
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
