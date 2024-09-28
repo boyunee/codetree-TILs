@@ -12,14 +12,12 @@ public class Main {
         }
         
         int max = 0;
-        int index =0;
         for(int i=0; i<n; i++){
             if(ints[i] > max){
                 max = ints[i];
-                index = i+1;
             }
         }
-        System.out.println(index);
+        System.out.println(max);
         
     }
     static void block(int a, int b){
