@@ -21,7 +21,7 @@ public class Main {
         
     }
     static void block(int a, int b){
-        for(int i=a-1; i<b-1; i++){
+        for(int i=a-1; i<=b-1; i++){
             ints[i] +=1;
         }
     }
