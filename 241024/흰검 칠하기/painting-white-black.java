@@ -23,16 +23,17 @@ public class Main {
                 }else{
                     if(strs[i].endsWith("W")){
                     white++;
-                }else if(strs[i].endsWith("B")){
+                }else{
                     black++;
                 }
+                }
 
                 }
 
-            }else{
+            else{
                 if(strs[i].endsWith("W")){
                     white++;
-                }else if(strs[i].endsWith("B")){
+                }else{
                     black++;
                 }
             }
