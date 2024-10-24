@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main {
-    public static int[] ints = new int[101];
-    public static int nowIndex =50;
+    public static int[] ints = new int[120];
+    public static int nowIndex =60;
     public static int cnt=0;
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -10,7 +10,7 @@ public class Main {
         for(int i=0; i<n; i++){
             lining(sc.nextInt(), sc.next());
         }
-        for(int i=0; i<=100; i++){
+        for(int i=0; i<ints.length; i++){
             if(ints[i]>1&& ints[i+1]>1){
                 cnt++;
             }
