@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main {
     public static int[] ints = new int[120];
-    public static int nowIndex =60;
+    public static int nowIndex =80;
     public static int cnt=0;
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
