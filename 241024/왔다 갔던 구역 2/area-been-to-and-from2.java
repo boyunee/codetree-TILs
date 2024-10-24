@@ -11,7 +11,7 @@ public class Main {
             lining(sc.nextInt(), sc.next());
         }
         for(int i=0; i<ints.length; i++){
-            if(ints[i]>1&& ints[i+1]>1){
+            if(ints[i]>1){
                 ++cnt;
             }
         }
@@ -19,12 +19,12 @@ public class Main {
     }
     static void lining(int x, String direction){
         if(direction.equals("R")){
-            for(int i=nowIndex; i<=nowIndex+x; i++){
+            for(int i=nowIndex; i<nowIndex+x; i++){
                 ints[i] +=1;
             }
             nowIndex +=x;
         }else{
-            for(int i=nowIndex; i>=nowIndex-x; i--){
+            for(int i=nowIndex; i>nowIndex-x; i--){
                 ints[i] +=1;
             }
             nowIndex -=x;
