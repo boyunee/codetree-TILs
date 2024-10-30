@@ -27,7 +27,7 @@ public class Main {
                     if(j > yMax){
                         yMax = j;
                     }
-                    System.out.println(xMin + " "+xMax+ yMin + " "+yMax);
+                   
                 }
                 
             }
