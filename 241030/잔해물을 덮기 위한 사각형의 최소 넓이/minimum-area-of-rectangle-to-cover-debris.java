@@ -11,6 +11,7 @@ public class Main {
         for(int i=0; i<ints.length; i++){
             for(int j=0; j<ints.length; j++){
                 if(ints[i][j] == 1){
+                    // System.out.println(i+" "+j);
                     if(xMin==0 && yMin==0){
                         xMin=2000;
                         yMin=2000;
@@ -27,13 +28,11 @@ public class Main {
                     if(j > yMax){
                         yMax = j;
                     }
-                   
-                }
-                
+                } 
             }
         }
+        // System.out.println(xMax +" "+ xMin+ " "+yMax +" "+ yMin);
         System.out.println((xMax - xMin) * (yMax - yMin));
-
     }
     static void lining(int x1, int y1, int x2, int y2){
         for(int i=x1; i<=x2; i++){
@@ -44,8 +43,8 @@ public class Main {
     }
 
     static void liningM(int x1, int y1, int x2, int y2){
-        for(int i=x1; i<=x2; i++){
-            for(int j=y1; j<=y2; j++){
+        for(int i=x1; i<x2; i++){
+            for(int j=y1; j<y2; j++){
                 ints[i+1000][j+1000] = 0;
             }
         }
