@@ -7,10 +7,14 @@ public class Main {
         lining(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
         liningM(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
 
-        int xMin =2000, xMax=0, yMin=2000, yMax=0;
+        int xMin =0, xMax=0, yMin=0, yMax=0;
         for(int i=0; i<ints.length; i++){
             for(int j=0; j<ints.length; j++){
                 if(ints[i][j] == 1){
+                    if(xMin==0 && yMin==0){
+                        xMin=2000;
+                        yMin=2000;
+                    }
                     if(i < xMin){
                         xMin = i;
                     }
@@ -23,7 +27,7 @@ public class Main {
                     if(j > yMax){
                         yMax = j;
                     }
-                    
+                    System.out.println(xMin + " "+xMax+ yMin + " "+yMax);
                 }
                 
             }
