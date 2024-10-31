@@ -11,6 +11,9 @@ public class Main {
             ints[i] = sc.nextInt();
             if(i==0 || ints[i]!=ints[i-1]){
                 count =1;
+                if(count > maxCount){
+                    maxCount = count;
+                }
             } else{
                 count++;
                 if(count > maxCount){
