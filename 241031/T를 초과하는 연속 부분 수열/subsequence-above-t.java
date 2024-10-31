@@ -11,8 +11,9 @@ public class Main {
         for(int i=0; i<n; i++){
             ints[i] = sc.nextInt();
             // System.out.println(ints[i]);
-            if(ints[i] > 3){
+            if(ints[i] > t){
                 count++;
+                
                 if(count > maxCount){
                     maxCount = count;
                 }
