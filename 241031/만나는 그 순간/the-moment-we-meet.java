@@ -44,11 +44,12 @@ public class Main {
     }
     static void solution(){
         for(int i=0; i<A.length; i++){
-            if( i== 0 || A[i-1] == A[i] ){
+            if( i== 0 || i== A.length-1 || A[i] == A[i+1] ){
                 continue;
             }
             if(A[i] == B[i]){
                 System.out.println(i);
+                // System.out.println(A[i-1]);
                 return;
             }
             
