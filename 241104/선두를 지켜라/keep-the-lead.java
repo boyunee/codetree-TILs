@@ -3,6 +3,7 @@ public class Main {
     public static int[] A = new int[1000000 + 1];
     public static int[] B = new int[1000000 + 1];
     public static int now =1;
+    public static boolean Awin;
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
@@ -17,27 +18,33 @@ public class Main {
             lineB(sc.nextInt(), sc.nextInt());
         }
 
+        // for(int i =0; i<now; i++){
+        //     System.out.print(A[i]+" ");
+        // }
+        // System.out.println();
+        // for(int i =0; i<now; i++){
+        //     System.out.print(B[i]+" ");
+        // }
         int count=0;
-        boolean Awin = false;
         // System.out.println(Awin);
         for(int i=0; i<now; i++){
             if(A[i]< B[i]){
                 if(Awin){
                     count++;
                     Awin = false;
+                    // System.out.println(i);
                 }
                     
             }
             else if( A[i]> B[i]){
                 if(!Awin){
                     count++;
-                    Awin = false;
+                    Awin = true;
+                    // System.out.println(i);
                 }
             }
         }
         System.out.println(count);
-
-        
     }
     static void lineA(int v, int m){
         while(m-- > 0){
