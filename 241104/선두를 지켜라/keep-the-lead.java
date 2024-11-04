@@ -19,23 +19,19 @@ public class Main {
 
         int count=0;
         boolean Awin = false;
-        if(A[1]> B[1]){
-            Awin = true;
-        }
         // System.out.println(Awin);
         for(int i=0; i<now; i++){
-            if(Awin){
-                if(A[i]< B[i]){
+            if(A[i]< B[i]){
+                if(Awin){
                     count++;
-                    // System.out.println(i);
                     Awin = false;
                 }
-                
-            }else{
-                if(A[i]>B[i]){
+                    
+            }
+            else if( A[i]> B[i]){
+                if(!Awin){
                     count++;
-                    // System.out.println(i);
-                    Awin = true;
+                    Awin = false;
                 }
             }
         }
