@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Main {
-    public static int[] A = new int[1000000];
-    public static int[] B = new int[1000000];
+    public static int[] A = new int[1000001];
+    public static int[] B = new int[1000001];
     public static int nowA = 0;
     public static int nowB = 0;
     public static void main(String[] args) {
