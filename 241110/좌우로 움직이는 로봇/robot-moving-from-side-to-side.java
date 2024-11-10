@@ -10,9 +10,11 @@ public class Main {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
+        int t=0;
+        String d= "";
         for(int i=0; i<n; i++){
-            int t = sc.nextInt();
-            String d = sc.next();
+            t = sc.nextInt();
+            d = sc.next();
 
             while(t-- > 0){
                 if(d.equals("R")){
@@ -25,8 +27,8 @@ public class Main {
             }
         }
         for(int i=0; i<m; i++){
-            int t = sc.nextInt();
-            String d = sc.next();
+            t = sc.nextInt();
+            d = sc.next();
 
             while(t-- > 0){
                 if(d.equals("R")){
@@ -58,11 +60,8 @@ public class Main {
                     // System.out.println(i);
                     count++;
                 }
-
             }
         }
-
         System.out.println(count);
-
     }
 }
