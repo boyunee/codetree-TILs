@@ -11,6 +11,10 @@ public class Main {
         int T = sc.nextInt();
         int[] developers = new int[N];
         developers[P-1] = 1;
+        int[] count = new int[N];
+        for(int i=0; i<N; i++){
+            count[i] = K;
+        }
 
         int t =0;
         for(int i=0; i<T; i++){
@@ -19,18 +23,23 @@ public class Main {
             ys[t] = sc.nextInt();
         }
 
-        int count =0;
         for(int i=0; i<250; i++){
             if(xs[i] == 0){
                 continue;
             }
-            if(count >= K){
-                break;
+            int p1 = xs[i] -1 ;
+            int p2 = ys[i] -1 ;
+            // System.out.println(i +" "+ xs[i] +" "+ys[i]);
+            if(developers[p1] == 1 && developers[p2] == 1){
+                count[p1] -=1;
+                count[p2] -=1;
             }
-            if(developers[xs[i] -1] == 1 || developers[ys[i] -1] == 1){
-                developers[xs[i] -1] = 1;
-                developers[ys[i] -1] = 1;
-                count++;
+            else if(developers[p1] == 1 && count[p1] > 0){
+                developers[p2] = 1;
+                count[p1] -=1;
+            }else if(developers[p2] == 1 && count[p2] > 0){
+                developers[p1] = 1;
+                    count[p2] -=1;
             }
         }
 
