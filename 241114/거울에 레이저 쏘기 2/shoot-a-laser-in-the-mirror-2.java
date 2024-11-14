@@ -25,7 +25,7 @@ public class Main {
             x=input-n-1; y=n-1;
         }else if(input >n*2 && input <=n*3){
             dir = 2;
-            x=n-1; y=(input-1)%n;
+            x=n-1; y=3*n-input;
         }else {
             dir = 3;
             x=4*n-input; y=0;
