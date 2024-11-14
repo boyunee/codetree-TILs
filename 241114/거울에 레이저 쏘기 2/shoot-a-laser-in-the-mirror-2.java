@@ -1,8 +1,8 @@
 import java.util.*;
 public class Main {
     public static int dir=0;
-    public static int[] dx = {1,0,1,0,};
-    public static int[] dy = {0,-1,0,-1};
+    public static int[] dx = {1,0,-1,0};
+    public static int[] dy = {0,-1,0,1};
     public static int n;
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -33,11 +33,13 @@ public class Main {
 
         int count=0;
         while(inRange(x,y)){
+            // System.out.println(x+" "+y+"dir:"+dir);
             if(mirror[x][y].equals("/")){
                 dir = dir ^ 1;
             }else{
                 dir = 3-dir;
             }
+        
             x+=dx[dir];
             y+=dy[dir];
             count++;
