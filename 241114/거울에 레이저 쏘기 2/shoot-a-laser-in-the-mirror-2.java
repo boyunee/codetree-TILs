@@ -33,6 +33,11 @@ public class Main {
 
         int count=0;
         while(inRange(x,y)){
+            if(mirror[x][y].equals("/")){
+                dir = dir ^ 1;
+            }else{
+                dir = 3-dir;
+            }
             x+=dx[dir];
             y+=dy[dir];
             count++;
