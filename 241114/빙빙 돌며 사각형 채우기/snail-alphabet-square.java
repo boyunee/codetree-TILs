@@ -21,6 +21,9 @@ public class Main {
 
             chars[x][y] = c;
             c++;
+            if(c>90){
+                c=65;
+            }
             x+=dx[dir];
             y+=dy[dir];
             if(!check(x,y)){
