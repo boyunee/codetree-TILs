@@ -6,12 +6,19 @@ public class Main {
         String str  = sc.next();
 
         int max = 0;
+        boolean isZero = false;
         for(int i=0; i<str.length(); i++){
             if(str.charAt(i) == '0'){
+                isZero = true;
                 int dec = toDecimal(str.substring(0,i)+"1"+str.substring(i+1));
                 // System.out.println(dec);
                 max = Math.max(max, dec);
             }
+        }
+
+        if(!isZero){
+            int dec = toDecimal(str.substring(0,str.length()-1)+"0");
+            max = Math.max(max, dec);
         }
         System.out.println(max);
 
