@@ -12,7 +12,7 @@ public class Main {
         }
         int d = 0;
         int point = 1;
-        int min = 100000;
+        int min = Integer.MAX_VALUE;
         while(point < n-1){
             d = 0;
             for(int i=1; i<n; i++){
