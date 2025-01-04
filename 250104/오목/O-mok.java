@@ -48,6 +48,8 @@ public class Main {
                         if(isWin == now){
                             result[0] = i+3;
                             result[1] = j-3;
+                            done = true;
+                            break;
                         }
                     }
                     //오른쪽대각석
@@ -62,6 +64,8 @@ public class Main {
                         if(isWin == now){
                             result[0] = i+3;
                             result[1] = j+3;
+                            done = true;
+                            break;
                         }
                     
                     }
