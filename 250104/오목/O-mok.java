@@ -63,7 +63,7 @@ public class Main {
                         }
                         if(isWin == now){
                             result[0] = i+3;
-                            result[1] = j-3;
+                            result[1] = j-1;
                             done = true;
                             break;
                         }
