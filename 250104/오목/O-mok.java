@@ -20,7 +20,7 @@ public class Main {
                 if(ints[i][j] != 0){
                     //검사시작
                     int now = ints[i][j];
-                    //일자
+                    //가로일자
                     if(checkBoundary(i, j+4) && ints[i][j+1] == now){
                         for(int l=2; l<5; l++){
                             if(ints[i][j+l] != now){
@@ -32,6 +32,22 @@ public class Main {
                         if(isWin == now){
                             result[0] = i+1;
                             result[1] = j+3;
+                            done = true;
+                            break;
+                        }
+                    }
+                    //세로일자
+                    if(checkBoundary(i+4, j) && ints[i+1][j] == now){
+                        for(int l=2; l<5; l++){
+                            if(ints[i+l][j] != now){
+                                isWin = 0;
+                                break;
+                            }
+                            isWin = now;
+                        }
+                        if(isWin == now){
+                            result[0] = i+3;
+                            result[1] = j+1;
                             done = true;
                             break;
                         }
