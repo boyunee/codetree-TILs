@@ -15,9 +15,9 @@ public class Main {
         int min = Integer.MAX_VALUE;
         for(int i=0; i<n-1; i++){
             for(int j=i+1; j<n; j++){
-                min = Math.min(min, sum - ints[i] - ints[j] - s);
+                min = Math.min(min, Math.abs(sum - ints[i] - ints[j] - s));
             }
         }
-        System.out.println(Math.abs(min));
+        System.out.println(min);
     }
 }
