@@ -20,16 +20,23 @@ public class Main {
         }
 
         // System.out.println(max);
-
-        int result = 0;
-        boolean isMax = false;
+        loop:
         for(int i=0; i<n; i++){
             for(int j=0; j<n-2; j++){
                 int sum = ints[i][j] + ints[i][j+1] + ints[i][j+2];
-                if(!isMax && sum == max){
-                    isMax = true;
-                    continue;
+                if(sum == max){
+                    ints[i][j] = 0;
+                    ints[i][j+1] = 0;
+                    ints[i][j+2] = 0;
+                    break loop;
                 }
+            }
+        }
+
+        int result = 0;
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n-2; j++){
+                int sum = ints[i][j] + ints[i][j+1] + ints[i][j+2];
                 result = Math.max(result, sum);
             }
         }
