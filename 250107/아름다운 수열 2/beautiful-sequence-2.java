@@ -35,6 +35,10 @@ public class Main {
         for(int i =0; i<m; i++){
             b[i] = sc.nextInt();
         }
+        if(m>n){
+            System.out.println(0);
+            System.exit(0);
+        }
         //아름다운 수열 배열 저장
 
         permute(0, m-1);
