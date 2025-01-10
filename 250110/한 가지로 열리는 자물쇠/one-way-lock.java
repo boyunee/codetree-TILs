@@ -14,7 +14,7 @@ public class Main {
         for(int i=1; i<=n; i++){
             for(int j=1; j<=n; j++){
                 for(int k=1; k<=n; k++){
-                    if((i >= a+3) && (j >= b+3) && (k >= c+3)){
+                    if(((i >= a+3) || (i <= a-3))&& ((j >= b+3) || (j <= b-3))&& ((k >= c+3) || (k <= c-3))){
                         unlock++;
                     }
                 }
